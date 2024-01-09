@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header class="primary-header flex">
+      <div class="flex navbar">
+        <div class="hambergur">
+          <div class="open">
+            <img src="./images/icon-menu.svg" />
+          </div>
+          <div class="close">
+            <img src="./images/icon-close.svg" />
+          </div>
+        </div>
+        <div>
+          <img src="./images/logo.svg" alt="sneakers" class="logo" />
+        </div>
+        <nav class="flex primary-navigation">
+          <ul class="nav-items flex">
+            <li><a class="nav-links" href="#">Collections</a></li>
+            <li><a class="nav-links" href="#">Men</a></li>
+            <li><a class="nav-links" href="#">Women</a></li>
+            <li><a class="nav-links" href="#">About</a></li>
+            <li><a class="nav-links" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="overlay"></div>
+      </div>
+      <div class="profile flex">
+        <div class="cart-box">
+          <img src="./images/icon-cart.svg" alt="cart" class="cart cart-icon" />
+          <span id="orderQuantity" class="cart-icon">5</span>
+          <div class="cart-info empty">
+            <p>Cart</p>
+            <div class="product">
+              <p>Your cart is empty</p>
+            </div>
+          </div>
+          <div class="cart-info">
+            <p>Cart</p>
+            <div class="product">
+              <img src="/images/image-product-1-thumbnail.jpg" />
+              <div class="description">
+                <p>Fall Limited Edition Sneakers</p>
+                <p>
+                  $125.00 x <span class="quantity"></span
+                  ><span id="total"> </span>
+                </p>
+              </div>
+              <img src="/images/icon-delete.svg" class="icon-delete" />
+            </div>
+            <button class="checkout btn">Checkout</button>
+          </div>
+        </div>
+        <img src="./images/image-avatar.png" class="avatar" />
+      </div>
+    </header>
+    <main class="main-section">
+      <div class="img-box">
+        <div class="desktop">
+          <img src="./images/image-product-1.jpg" />
+        </div>
+        <div class="big-img slider-container flex">
+          <div class="slides flex">
+            <img src="./images/image-product-1.jpg" />
+          </div>
+          <div class="slides flex">
+            <img src="./images/image-product-2.jpg" />
+          </div>
+          <div class="slides flex">
+            <img src="./images/image-product-3.jpg" />
+          </div>
+          <div class="slides flex">
+            <img src="./images/image-product-4.jpg" />
+          </div>
+        </div>
+        <div class="slider-btns">
+          <button class="prev slider-btns" id="prev">
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 1 3 9l8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button class="next slider-btns" id="next">
+            <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m2 1 8 8-8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="sub-img">
+          <div class="img-wrap active">
+            <img src="./images/image-product-1-thumbnail.jpg" />
+          </div>
+          <div class="img-wrap">
+            <img src="./images/image-product-2-thumbnail.jpg" />
+          </div>
+          <div class="img-wrap">
+            <img src="./images/image-product-3-thumbnail.jpg" />
+          </div>
+          <div class="img-wrap">
+            <img src="./images/image-product-4-thumbnail.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="content-box flex">
+        <p class="product-name">Sneaker Company</p>
+        <h1 class="main-heading">Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-box flex">
+          <div class="current-price flex">
+            <h2 class="current-price">$125.00</h2>
+            <span class="discount">50%</span>
+          </div>
+          <p class="previous-price">$250.00</p>
+        </div>
+        <div class="add-to-cart">
+          <div class="quantity-info">
+            <img src="images/icon-minus.svg" class="minus" />
+            <span class="quantity">0</span>
+            <img src="images/icon-plus.svg" class="plus" />
+          </div>
+          <button class="btn Add">
+            <span><img src="./images/icon-cart.svg" class="cart" /></span>Add to
+            cart
+          </button>
+        </div>
+      </div>
+    </main>
+    <div class="accordian">
+      <div class="img-box">
+        <div class="desktop">
+          <img src="./images/image-product-1.jpg" />
+        </div>
+        <div class="big-img slider-container flex">
+          <div class="slides flex">
+            <img src="./images/image-product-1.jpg" />
+          </div>
+          <div class="slides flex">
+            <img src="./images/image-product-2.jpg" />
+          </div>
+          <div class="slides flex">
+            <img src="./images/image-product-3.jpg" />
+          </div>
+          <div class="slides flex">
+            <img src="./images/image-product-4.jpg" />
+          </div>
+        </div>
+        <div class="slider-btns">
+          <button class="prev slider-btns" id="prev">
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 1 3 9l8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button class="next slider-btns" id="next">
+            <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m2 1 8 8-8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="sub-img">
+          <div class="img-wrap active">
+            <img src="./images/image-product-1-thumbnail.jpg" />
+          </div>
+          <div class="img-wrap">
+            <img src="./images/image-product-2-thumbnail.jpg" />
+          </div>
+          <div class="img-wrap">
+            <img src="./images/image-product-3-thumbnail.jpg" />
+          </div>
+          <div class="img-wrap">
+            <img src="./images/image-product-4-thumbnail.jpg" />
+          </div>
+        </div>
+        <div class="close-btn">
+          <button class="close">
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                fill="#69707D"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Rajkishor Thakur</a>.
+    </div> -->
+    <script src="./js/app.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
